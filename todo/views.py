@@ -18,3 +18,7 @@ def add_item(request):
         
         return redirect('get_todo_list')
     return render(request,'todo/add_item.html')
+
+
+def delete_item(request):
+    return render(request, 'todo/delete_item.html')
