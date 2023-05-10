@@ -10,5 +10,13 @@
     <h1>
         This is my list!!!
     </h1>
+    {% for item in items %}
+        <table>
+            <tr>
+                <td> {{ item.name }} {{ item.done }} </td>
+            </tr>
+        </table>
+    {% endfor%}
+    <a href="/add">Add an Item</a>
 </body>
 </html>
